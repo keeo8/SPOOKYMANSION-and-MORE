@@ -1,0 +1,80 @@
+{
+  "__metadata__": {
+    "title": "Adventure",
+    "start": "classroom"
+  },
+  "classroom": {
+    "name": "classroom",
+    "description": "You're in a lecture hall, for some reason.",
+    "exits": [
+      {
+        "destination": "hallway",
+        "description": "A door leads into the hall."
+      }
+    ],
+    "items": []
+  },
+  "hallway": {
+    "name": "hallway",
+    "description": "This is a hallway with many locked doors.",
+    "exits": [
+      {
+        "destination": "classroom",
+        "description": "Go back into the classroom."
+      },
+      {
+        "destination": "new classroom",
+        "description": "You see a slightly opened mahogany door letting chatter echo into the hallway, of course you want to open it!"
+      },
+      {
+        "destination": "staircase",
+        "description": "A door with the words STAIRS is stuck open."
+      }
+    ],
+    "items": []
+  },
+  "staircase": {
+    "name": "staircase",
+    "description": "The staircase leads downward.",
+    "exits": [
+      {
+        "destination": "hallway",
+        "description": "Nevermind; go back to the hallway."
+      },
+      {
+        "destination": "outside",
+        "description": "A door at the bottom of the stairs has a red, glowing, EXIT sign."
+      }
+    ],
+    "items": []
+  },
+  "outside": {
+    "name": "outside",
+    "description": "You've escaped! It's cold out.",
+    "exits": [],
+    "items": [],
+    "ends_game": true
+  },
+  "new classroom": {
+    "name": "new classroom",
+    "description": "You step in and see Laurie Patton teaching a lecture! What a great president! Also, everyone is looking at you.",
+    "exits": [
+      {
+        "destination": "hallway",
+        "description": "You run out of the room, tears streaming down your face. How could you embarass yourself that badly?"
+      },
+      {
+        "destination": "desk",
+        "description": "Well so what if people stare, you came here to learn and thus take a seat in an open desk. Noone is sitting there due to covid restriction. However, you already counted how many beds there were and, with the n+2 rule, you seemed safe to sit down."
+      }
+    ],
+    "items": []
+  },
+  "desk": {
+    "name": "desk",
+    "description": "The moment you sit down, you fall into a zen-like trance. Laurie Patton serenades you with the history of religious history. After 75 minutes, you gain an honorary degree and graduate mega clam chowder",
+    "exits": [],
+    "items": [],
+    "ends_game": true
+  }
+}

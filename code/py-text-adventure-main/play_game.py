@@ -77,7 +77,10 @@ def play(rooms):
             continue
         
         if action in ["stuff"]:
-            print(stuff)
+            if len(stuff) >0:
+                print(stuff)
+            else: 
+                print('You have nothing')
             continue
         
         if action in ["take"]:
